@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watchAll",
-    "test": "jest premium.test"
+    "test:watch": "jest --watchAll"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
