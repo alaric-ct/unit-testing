@@ -7,8 +7,6 @@ afterEach(() => jest.restoreAllMocks());
 // The money math — the part that actually matters — needs ZERO mocks.
 // Real input in, real number out. Titles state the behaviour as
 // WHEN <situation> / THEN <outcome>, so the test report reads like a spec.
-// (A trimmed Given-When-Then — GIVEN is implicit when there's no setup.)
-// https://martinfowler.com/bliki/GivenWhenThen.html
 describe("calculatePremium", () => {
   it("WHEN a house with no risk factors, THEN the premium is 0.5% of its value", () => {
     expect(calculatePremium({ value: 300_000, hasPool: false, roofAgeYears: 5 })).toBe(1500);

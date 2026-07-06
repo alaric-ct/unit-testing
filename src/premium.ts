@@ -36,6 +36,6 @@ export async function chargePremium(house: House, customerId: string): Promise<v
       cause.message = `Could not charge ${customerId}: ${cause.message}`;
       throw cause;
     }
-    throw new Error(`Could not charge ${customerId}`);
+    throw new Error(`Could not charge ${customerId}`, { cause });
   }
 }
